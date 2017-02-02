@@ -10,13 +10,12 @@ package items;
  * @author SENA
  */
 public class principal {
-
-    /**
+    /*
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        series ListadoSeries []=new series [5];
+       series ListadoSeries []=new series [5];
         peliculas ListadoPeliculas[]=new peliculas[5];
         
         ListadoPeliculas[0]=new peliculas();
@@ -81,6 +80,11 @@ public class principal {
         }
         System.out.println("\nPelicula mas Reciente:\n");
         System.out.println(ListadoPeliculas[indice].toString());
+        
+        NewJFrame prueba = new NewJFrame();
+        prueba.jTextArea2.append("\nPelicula mas Reciente:\n"+ ListadoPeliculas[indice].toString());
+        prueba.setVisible(true);
+        
     }
-    
+     
 }
